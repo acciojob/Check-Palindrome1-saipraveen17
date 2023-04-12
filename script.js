@@ -1,10 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-	let arr = str.split("");
+	let st = str.toLowerCase();
+	let arr = st.split("");
 	arr.reverse();
 	let rev= arr.join("");
-	if(str==rev) {
+	if(st==rev) {
 		return true;
 	}
 	else {
